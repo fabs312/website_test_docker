@@ -1,0 +1,372 @@
+:root {
+  --almost-black: #141414;
+  --almost-white: #f3f3f3;
+  --grayish: #b0b0b0;
+}
+
+/* My CSS */
+.favicon {filter: invert(98%) sepia(4%) saturate(238%) hue-rotate(209deg) brightness(113%) contrast(91%)}
+
+/* Desktop */
+body {
+  background-color: var(--almost-white);
+  color: var(--almost-black);
+  font-family: 'Roboto', sans-serif;
+}
+/* Navigation Bar Desktop */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+nav .nav-branding {
+  display: flex;
+  align-items: center;
+  color: var(--almost-black);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+nav .nav-branding i {padding-right: 1rem}
+nav .nav-menu {display: flex}
+nav .nav-menu li {padding-left: 3rem}
+nav .nav-menu li a {
+  color: var(--almost-black);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+nav .nav-menu li a:hover {
+  color: var(--grayish) !important;
+  transition: 0.2s;
+}
+
+/* Main Desktop */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-1 {
+  width: 90%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-1 .s1-img {
+  width: 20rem;
+  border-radius: 1rem;
+}
+.sec-1 .s1-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+}
+.sec-1 .s1-content h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.sec-1 .s1-intro {
+  display: flex;
+  align-items: center;
+}
+.sec-1 .s1-intro h2 {
+  font-size: 2.5rem;
+  width: 30rem;
+}
+.sec-1 .s1-intro .fa-solid {
+  font-size: 3rem;
+  color: maroon;
+}
+hr {
+  background: rgba(0, 0, 0, 0.25);
+  border-style: none;
+  height: 1px;
+  width: 90%;
+}
+section.skills-icons {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 4rem;
+  height: 10rem;
+  color: var(--almost-black);
+}
+.section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  height: 60rem;
+}
+.section .sec-content {
+  display: flex;
+  height: 15rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.section .sec-header {
+  display: flex;
+  width: 50%;
+}
+.section .fa-diamond {
+  font-size: 2.5rem;
+  margin-right: 0.75rem;
+}
+.section .sec-title h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.section .sec-title p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.section .sec-description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-top: 4rem;
+}
+.section .sec-description .sec-desc-sentence {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+.section .sec-out-link {display: flex}
+.section .sec-out-link p {
+  font-weight: 900;
+  margin-right: 0.5rem;
+}
+.section .sec-out-link i {font-size: 1.2rem}
+.section .section-img {
+  margin-bottom: 20rem;
+  border-radius: 1rem;
+}
+
+/* About Page Desktop */
+.about-section1 {
+  display: flex;
+  width: 70%;
+  height: 36rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.about-section1 .about-s1-content {
+  width: 65%;
+  display: flex;
+}
+.about-section1 .about-s1-content .fa-square {
+  font-size: 2.2rem;
+  margin-right: 0.75rem;
+  color: maroon;
+}
+.about-section1 .about-s1-intro {width: 33rem}
+.about-section1 .about-s1-intro h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.about-section1 .about-s1-intro p {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+.about-section1 .about-s1-sidelist {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-section1 .sidelist-section {
+  height: 16.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about-section1 .sidelist-section {font-size: 1.7rem}
+.about-section1 .sidelist-title {font-weight: 900}
+
+
+/* Footer Desktop */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12.5rem;
+}
+footer .footer-container {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+}
+footer .footer-img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.1rem;
+  border-radius: 0.5rem;
+  background-color: maroon;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-content .footer-header {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.8rem;
+}
+footer .footer-links ul {
+  display: flex;
+  align-items: center;
+}
+footer .footer-links ul li {padding-right: 2rem}
+footer .footer-links ul li a {
+  color: var(--almost-black);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+footer .footer-links ul li a:hover {
+  color: #b0b0b0;
+  transition: 0.2s;
+}
+
+/* Tablet, this works with iPad sized tablets */
+@media only screen and (max-width: 56em) {
+  /* Nav Tablet */
+
+  /* Main Tablet */
+  .sec-1 .s1-img {width: 7rem}
+  .sec-1 .s1-content {margin-left: 2rem}
+  .section {
+    width: 85%;
+    height: 50rem;
+  }
+
+  /* About Page Tablet */
+  .about-section1 {
+    flex-direction: column;
+    height: 50rem;
+    justify-content: space-between;
+  }
+  .about-section1 .about-s1-content {width: 100%}
+  .about-section1 .about-s1-intro {width: 100%}
+  .about-section1 .about-s1-sidelist {width: 100%}
+
+  /* Footer Section Tablet */
+
+}
+
+/* Mobile, like an iPhone 12 or iPhone 12 Max */
+@media only screen and (max-width: 38em) {
+  /* Navigation Bar Mobile */
+  nav {width: 100vw}
+  nav .nav-branding i {padding-right: 0.75rem}
+  nav .nav-menu li {padding-left: 1.25rem}
+  
+  /* Main Mobile */
+  .sec-1 {flex-direction: column}
+  .sec-1 .s1-img {width: 10rem}
+  .sec-1 .s1-content {
+    margin-left: 0;
+    margin-top: 2rem;
+    justify-content: space-between;
+    width: 100%;
+    height: 15rem;
+  }
+  .sec-1 .s1-content h1 {font-size: 3.5rem}
+  .sec-1 .s1-intro h2 {font-size: 2rem}
+  section.skills-icons {font-size: 2.5rem}
+  .section {
+    justify-content: space-around;
+    height: 37rem;
+  }
+  .section .sec-content {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .section .sec-header {width: 100%}
+  .section .sec-description {
+    width: 100%;
+    padding-top: 0rem;
+  }
+  .section .section-img {margin-bottom: 0rem}
+  
+  /* About Page Mobile */
+  .about-section1 {
+    width: 90%;
+    height: 56rem;
+  }
+  .about-section1 .sidelist-section {font-size: 1.25rem}
+  
+  /* Footer Mobile */
+  footer {height: 10rem}
+  footer .footer-content .footer-header {font-size: 2rem}
+  footer .footer-links ul li {padding-right: 1rem}
+  footer .footer-links ul li a {font-size: 0.9rem}
+}
+
+/* Super small phones, like iPhone 4's */
+@media only screen and (max-width: 22em) {
+  /* Nav for small phones */
+  nav .nav-branding {font-size: 1.05rem}
+  nav .nav-branding i {padding-right: 0.75rem}
+  nav .nav-menu li {padding-left: 1rem}
+  nav .nav-menu li a {font-size: 0.95rem}
+  
+  /* Main Small phones */
+  .sec-1 .s1-content {height: 13rem}
+  .sec-1 .s1-content h1 {font-size: 3rem}
+  .sec-1 .s1-intro h2 {width: 100%}
+  section.skills-icons {font-size: 2rem}
+  .section {
+    width: 90%;
+    height: 35rem;
+  }
+  
+  /* About Page Small phones */
+  .about-section1 {height: 66rem}
+  
+  /* Footer Small phones */
+  footer .footer-content {width: 100%}
+  footer .footer-content .footer-header {font-size: 2rem}
+  footer .footer-img {
+    margin-right: 0.45rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.35rem;
+  }
+  footer .footer-links ul li {padding-right: 0.75rem}
+  footer .footer-links ul li a {font-size: 0.9rem}
+}
+
+
+/* This enables dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--almost-black);
+    color: var(--almost-white);
+  }
+  /* Navigation Bar Dark */
+  nav .nav-branding {color: var(--almost-white)}
+  nav .nav-menu li a {color: var(--almost-white)}
+  nav .nav-menu li a:hover {color: var(--grayish) !important}
+
+  /* Main Dark */
+  .sec-1 .s1-intro .fa-solid {color: maroon}
+  hr {background: rgba(255, 255, 255, 0.25)}
+  section.skills-icons {color: var(--almost-white)}
+
+  /* About Page Dark */
+  .about-section1 .about-s1-content .fa-square {color: maroon}
+
+  /* Footer Dark */
+  footer .footer-links ul li a {color: var(--almost-white)}
+  footer .footer-links ul li a:hover {color: var(--grayish)}
+}
